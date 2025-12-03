@@ -68,4 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc854cea1dba83c4e9aec45e5524d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Observer
+  gameEnding: {fileID: 0}
   player: {fileID: 0}
+  audioSource: {fileID: 0}
+  seenAudio: {fileID: 8300000, guid: e4ac9ce7ce0849643a5ca6f3f712affe, type: 3}

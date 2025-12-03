@@ -6,6 +6,8 @@ public class Observer : MonoBehaviour
 {
     public GameEnding gameEnding;
     public Transform player;
+    public AudioSource audioSource;
+    public AudioClip seenAudio;
     bool m_IsPlayerInRange;
 
     void OnTriggerEnter (Collider other)
@@ -13,6 +15,7 @@ public class Observer : MonoBehaviour
         if (other.transform == player)
         {
             m_IsPlayerInRange = true;
+            audioSource.PlayOneShot(seenAudio);
         }
     }
 
